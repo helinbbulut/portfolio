@@ -1,0 +1,313 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f8f7ff;
+  color: #1f1f1f;
+}
+
+header {
+  padding: 25px 10%;
+  background-color: white;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+nav h2 {
+  font-size: 24px;
+}
+
+nav a {
+  margin-left: 25px;
+  color: #1f1f1f;
+  text-decoration: none;
+  font-weight: 600;
+}
+
+#home {
+  min-height: 85vh;
+  padding: 80px 10%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 60px;
+}
+
+#home h1 {
+  font-size: 56px;
+  margin-bottom: 20px;
+}
+
+#home p {
+  max-width: 700px;
+  font-size: 20px;
+  line-height: 1.7;
+  margin-bottom: 35px;
+}
+
+#home a {
+  width: fit-content;
+  padding: 14px 26px;
+  background-color: #6c63ff;
+  color: white;
+  text-decoration: none;
+  border-radius: 30px;
+  font-weight: bold;
+}
+
+.home-image img {
+  width: 300px;
+  height: 300px;
+  object-fit: cover;
+  border-radius: 50%;
+}
+
+.home-text {
+  flex: 1;
+}
+
+.home-image {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+}
+
+.buttons {
+  display: flex;
+  gap: 20px;
+  margin-top: 20px;
+}
+
+.buttons a:last-child {
+  background-color: white;
+  color: #6c63ff;
+  border: 2px solid #6c63ff;
+}
+
+.buttons a:hover {
+  transform: translateY(-2px);
+  transition: 0.3s;
+}
+
+#about {
+  padding: 100px 10%;
+  background-color: white;
+}
+
+#about h2 {
+  font-size: 36px;
+  margin-bottom: 20px;
+}
+
+#about p {
+  max-width: 800px;
+  font-size: 20px;
+  line-height: 1.8;
+}
+
+#skills {
+  padding: 100px 10%;
+  background-color: #f8f7ff;
+}
+
+#skills h2 {
+  font-size: 36px;
+  margin-bottom: 30px;
+}
+
+.skills-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 15px;
+}
+
+.skills-container span {
+  background-color: white;
+  padding: 14px 22px;
+  border-radius: 30px;
+  font-weight: 600;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.07);
+}
+
+#projects {
+  padding: 100px 10%;
+  background-color: white;
+}
+
+#projects h2 {
+  font-size: 36px;
+  margin-bottom: 40px;
+}
+
+.project-card {
+  background-color: #f8f7ff;
+  padding: 30px;
+  border-radius: 20px;
+  margin-bottom: 25px;
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.06);
+}
+
+.project-card h3 {
+  margin-bottom: 15px;
+  font-size: 24px;
+}
+
+.project-card p {
+  line-height: 1.7;
+  font-size: 18px;
+}
+
+#education {
+  padding: 100px 10%;
+  background-color: #f8f7ff;
+}
+
+#education h2 {
+  font-size: 36px;
+  margin-bottom: 40px;
+}
+
+.education-card {
+  background-color: white;
+  padding: 30px;
+  border-radius: 20px;
+  margin-bottom: 25px;
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.06);
+}
+
+.education-card h3 {
+  font-size: 24px;
+  margin-bottom: 12px;
+}
+
+.education-card p {
+  font-size: 18px;
+  line-height: 1.7;
+}
+
+#contact {
+  padding: 100px 10%;
+  background-color: white;
+  text-align: center;
+}
+
+#contact h2 {
+  font-size: 36px;
+  margin-bottom: 20px;
+}
+
+#contact p {
+  font-size: 18px;
+  margin-bottom: 30px;
+  line-height: 1.7;
+}
+
+.contact-links {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  flex-wrap: wrap;
+}
+
+.contact-links a {
+  text-decoration: none;
+  font-weight: 600;
+  color: #6c63ff;
+}
+
+footer {
+  padding: 30px;
+  text-align: center;
+  background-color: #111;
+  color: white;
+}
+
+header {
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+nav a:hover {
+  color: #6c63ff;
+}
+
+#home a,
+.contact-links a {
+  transition: 0.3s ease;
+}
+
+.project-card:hover,
+.education-card:hover {
+  transform: translateY(-5px);
+  transition: 0.3s ease;
+}
+
+section {
+  scroll-margin-top: 90px;
+}
+
+@media (max-width: 768px) {
+  nav {
+    flex-direction: column;
+    gap: 15px;
+  }
+
+  nav div {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 12px;
+  }
+
+  nav a {
+    margin-left: 0;
+    font-size: 14px;
+  }
+
+  #home {
+    flex-direction: column;
+    text-align: center;
+    padding: 70px 8%;
+  }
+
+  #home h1 {
+    font-size: 38px;
+  }
+
+  #home p {
+    font-size: 17px;
+  }
+
+  .buttons {
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+
+  .home-image img {
+    width: 230px;
+    height: 230px;
+  }
+
+  section {
+    padding: 70px 8%;
+  }
+
+  #about p,
+  .project-card p,
+  .education-card p {
+    font-size: 16px;
+  }
+}
